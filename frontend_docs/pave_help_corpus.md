@@ -116,7 +116,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -155,13 +155,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -171,7 +171,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -197,7 +197,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -215,7 +215,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -247,19 +247,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -279,7 +279,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -291,7 +291,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -305,7 +305,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -321,7 +321,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -329,7 +329,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -341,7 +341,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -349,7 +349,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -466,7 +466,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -505,13 +505,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -521,7 +521,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -547,7 +547,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -565,7 +565,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -597,19 +597,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -629,7 +629,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -641,7 +641,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -655,7 +655,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -671,7 +671,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -679,7 +679,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -691,7 +691,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -699,7 +699,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -816,7 +816,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -855,13 +855,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -871,7 +871,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -897,7 +897,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -915,7 +915,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -947,19 +947,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -979,7 +979,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -991,7 +991,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -1005,7 +1005,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -1021,7 +1021,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -1029,7 +1029,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -1041,7 +1041,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -1049,7 +1049,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -1166,7 +1166,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -1205,13 +1205,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -1221,7 +1221,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -1247,7 +1247,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -1265,7 +1265,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -1297,19 +1297,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -1329,7 +1329,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -1341,7 +1341,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -1355,7 +1355,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -1371,7 +1371,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -1379,7 +1379,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -1391,7 +1391,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -1399,7 +1399,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -1516,7 +1516,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -1555,13 +1555,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -1571,7 +1571,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -1597,7 +1597,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -1615,7 +1615,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -1647,19 +1647,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -1679,7 +1679,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -1691,7 +1691,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -1705,7 +1705,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -1721,7 +1721,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -1729,7 +1729,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -1741,7 +1741,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -1749,7 +1749,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -1866,7 +1866,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -1905,13 +1905,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -1921,7 +1921,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -1947,7 +1947,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -1965,7 +1965,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -1997,19 +1997,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -2029,7 +2029,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -2041,7 +2041,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -2055,7 +2055,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -2071,7 +2071,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -2079,7 +2079,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -2091,7 +2091,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -2099,7 +2099,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -2216,7 +2216,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -2255,13 +2255,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -2271,7 +2271,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -2297,7 +2297,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -2315,7 +2315,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -2347,19 +2347,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -2379,7 +2379,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -2391,7 +2391,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -2405,7 +2405,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -2421,7 +2421,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -2429,7 +2429,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -2441,7 +2441,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -2449,7 +2449,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -2566,7 +2566,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -2605,13 +2605,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -2621,7 +2621,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -2647,7 +2647,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -2665,7 +2665,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -2697,19 +2697,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -2729,7 +2729,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -2741,7 +2741,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -2755,7 +2755,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -2771,7 +2771,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -2779,7 +2779,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -2791,7 +2791,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -2799,7 +2799,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -2916,7 +2916,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -2955,13 +2955,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -2971,7 +2971,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -2997,7 +2997,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -3015,7 +3015,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -3047,19 +3047,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -3079,7 +3079,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -3091,7 +3091,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -3105,7 +3105,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -3121,7 +3121,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -3129,7 +3129,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -3141,7 +3141,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -3149,7 +3149,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -3266,7 +3266,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -3305,13 +3305,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -3321,7 +3321,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -3347,7 +3347,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -3365,7 +3365,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -3397,19 +3397,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -3429,7 +3429,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -3441,7 +3441,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -3455,7 +3455,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -3471,7 +3471,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -3479,7 +3479,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -3491,7 +3491,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -3499,7 +3499,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -3616,7 +3616,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -3655,13 +3655,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -3671,7 +3671,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -3697,7 +3697,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -3715,7 +3715,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -3747,19 +3747,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -3779,7 +3779,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -3791,7 +3791,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -3805,7 +3805,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -3821,7 +3821,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -3829,7 +3829,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -3841,7 +3841,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -3849,7 +3849,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -3966,7 +3966,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -4005,13 +4005,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -4021,7 +4021,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -4047,7 +4047,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -4065,7 +4065,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -4097,19 +4097,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -4129,7 +4129,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -4141,7 +4141,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -4155,7 +4155,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -4171,7 +4171,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -4179,7 +4179,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -4191,7 +4191,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -4199,7 +4199,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -4316,7 +4316,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -4355,13 +4355,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -4371,7 +4371,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -4397,7 +4397,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -4415,7 +4415,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -4447,19 +4447,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -4479,7 +4479,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -4491,7 +4491,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -4505,7 +4505,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -4521,7 +4521,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -4529,7 +4529,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -4541,7 +4541,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -4549,7 +4549,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -4666,7 +4666,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -4705,13 +4705,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -4721,7 +4721,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -4747,7 +4747,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -4765,7 +4765,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -4797,19 +4797,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -4829,7 +4829,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -4841,7 +4841,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -4855,7 +4855,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -4871,7 +4871,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -4879,7 +4879,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -4891,7 +4891,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -4899,7 +4899,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -5016,7 +5016,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -5055,13 +5055,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -5071,7 +5071,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -5097,7 +5097,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -5115,7 +5115,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -5147,19 +5147,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -5179,7 +5179,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -5191,7 +5191,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -5205,7 +5205,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -5221,7 +5221,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -5229,7 +5229,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -5241,7 +5241,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -5249,7 +5249,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -5366,7 +5366,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -5405,13 +5405,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -5421,7 +5421,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -5447,7 +5447,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -5465,7 +5465,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -5497,19 +5497,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -5529,7 +5529,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -5541,7 +5541,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -5555,7 +5555,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -5571,7 +5571,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -5579,7 +5579,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -5591,7 +5591,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -5599,7 +5599,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -5716,7 +5716,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -5755,13 +5755,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -5771,7 +5771,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -5797,7 +5797,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -5815,7 +5815,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -5847,19 +5847,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -5879,7 +5879,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -5891,7 +5891,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -5905,7 +5905,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -5921,7 +5921,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -5929,7 +5929,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -5941,7 +5941,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -5949,7 +5949,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -6066,7 +6066,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -6105,13 +6105,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -6121,7 +6121,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -6147,7 +6147,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -6165,7 +6165,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -6197,19 +6197,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -6229,7 +6229,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -6241,7 +6241,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -6255,7 +6255,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -6271,7 +6271,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -6279,7 +6279,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -6291,7 +6291,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -6299,7 +6299,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -6416,7 +6416,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -6455,13 +6455,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -6471,7 +6471,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -6497,7 +6497,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -6515,7 +6515,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -6547,19 +6547,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -6579,7 +6579,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -6591,7 +6591,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -6605,7 +6605,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -6621,7 +6621,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -6629,7 +6629,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -6641,7 +6641,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -6649,7 +6649,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -6766,7 +6766,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -6805,13 +6805,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -6821,7 +6821,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -6847,7 +6847,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -6865,7 +6865,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -6897,19 +6897,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -6929,7 +6929,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -6941,7 +6941,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -6955,7 +6955,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -6971,7 +6971,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -6979,7 +6979,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -6991,7 +6991,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -6999,7 +6999,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -7116,7 +7116,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -7155,13 +7155,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -7171,7 +7171,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -7197,7 +7197,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -7215,7 +7215,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -7247,19 +7247,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -7279,7 +7279,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -7291,7 +7291,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -7305,7 +7305,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -7321,7 +7321,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -7329,7 +7329,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -7341,7 +7341,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -7349,7 +7349,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -7466,7 +7466,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -7505,13 +7505,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -7521,7 +7521,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -7547,7 +7547,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -7565,7 +7565,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -7597,19 +7597,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -7629,7 +7629,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -7641,7 +7641,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -7655,7 +7655,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -7671,7 +7671,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -7679,7 +7679,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -7691,7 +7691,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -7699,7 +7699,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -7816,7 +7816,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -7855,13 +7855,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -7871,7 +7871,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -7897,7 +7897,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -7915,7 +7915,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -7947,19 +7947,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -7979,7 +7979,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -7991,7 +7991,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -8005,7 +8005,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -8021,7 +8021,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -8029,7 +8029,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -8041,7 +8041,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -8049,7 +8049,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -8166,7 +8166,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -8205,13 +8205,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -8221,7 +8221,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -8247,7 +8247,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -8265,7 +8265,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -8297,19 +8297,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -8329,7 +8329,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -8341,7 +8341,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -8355,7 +8355,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -8371,7 +8371,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -8379,7 +8379,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -8391,7 +8391,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -8399,7 +8399,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -8516,7 +8516,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -8555,13 +8555,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -8571,7 +8571,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -8597,7 +8597,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -8615,7 +8615,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -8647,19 +8647,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -8679,7 +8679,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -8691,7 +8691,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -8705,7 +8705,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -8721,7 +8721,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -8729,7 +8729,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -8741,7 +8741,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -8749,7 +8749,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -8866,7 +8866,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -8905,13 +8905,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -8921,7 +8921,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -8947,7 +8947,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -8965,7 +8965,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -8997,19 +8997,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -9029,7 +9029,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -9041,7 +9041,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -9055,7 +9055,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -9071,7 +9071,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -9079,7 +9079,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -9091,7 +9091,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -9099,7 +9099,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -9216,7 +9216,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -9255,13 +9255,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -9271,7 +9271,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -9297,7 +9297,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -9315,7 +9315,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -9347,19 +9347,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -9379,7 +9379,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -9391,7 +9391,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -9405,7 +9405,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -9421,7 +9421,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -9429,7 +9429,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -9441,7 +9441,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -9449,7 +9449,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -9566,7 +9566,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -9605,13 +9605,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -9621,7 +9621,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -9647,7 +9647,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -9665,7 +9665,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -9697,19 +9697,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -9729,7 +9729,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -9741,7 +9741,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -9755,7 +9755,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -9771,7 +9771,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -9779,7 +9779,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -9791,7 +9791,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -9799,7 +9799,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -9916,7 +9916,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -9955,13 +9955,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -9971,7 +9971,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -9997,7 +9997,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -10015,7 +10015,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -10047,19 +10047,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -10079,7 +10079,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -10091,7 +10091,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -10105,7 +10105,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -10121,7 +10121,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -10129,7 +10129,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -10141,7 +10141,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -10149,7 +10149,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -10266,7 +10266,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -10305,13 +10305,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -10321,7 +10321,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -10347,7 +10347,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -10365,7 +10365,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -10397,19 +10397,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -10429,7 +10429,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -10441,7 +10441,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -10455,7 +10455,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -10471,7 +10471,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -10479,7 +10479,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -10491,7 +10491,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -10499,7 +10499,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -10616,7 +10616,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -10655,13 +10655,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -10671,7 +10671,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -10697,7 +10697,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -10715,7 +10715,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -10747,19 +10747,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -10779,7 +10779,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -10791,7 +10791,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -10805,7 +10805,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -10821,7 +10821,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -10829,7 +10829,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -10841,7 +10841,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -10849,7 +10849,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -10966,7 +10966,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -11005,13 +11005,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -11021,7 +11021,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -11047,7 +11047,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -11065,7 +11065,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -11097,19 +11097,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -11129,7 +11129,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -11141,7 +11141,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -11155,7 +11155,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -11171,7 +11171,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -11179,7 +11179,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -11191,7 +11191,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -11199,7 +11199,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -11316,7 +11316,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -11355,13 +11355,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -11371,7 +11371,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -11397,7 +11397,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -11415,7 +11415,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -11447,19 +11447,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -11479,7 +11479,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -11491,7 +11491,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -11505,7 +11505,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -11521,7 +11521,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -11529,7 +11529,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -11541,7 +11541,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -11549,7 +11549,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -11666,7 +11666,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -11705,13 +11705,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -11721,7 +11721,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -11747,7 +11747,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -11765,7 +11765,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -11797,19 +11797,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -11829,7 +11829,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -11841,7 +11841,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -11855,7 +11855,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -11871,7 +11871,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -11879,7 +11879,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -11891,7 +11891,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -11899,7 +11899,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -12016,7 +12016,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -12055,13 +12055,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -12071,7 +12071,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -12097,7 +12097,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -12115,7 +12115,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -12147,19 +12147,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -12179,7 +12179,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -12191,7 +12191,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -12205,7 +12205,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -12221,7 +12221,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -12229,7 +12229,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -12241,7 +12241,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -12249,7 +12249,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -12366,7 +12366,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -12405,13 +12405,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -12421,7 +12421,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -12447,7 +12447,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -12465,7 +12465,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -12497,19 +12497,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -12529,7 +12529,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -12541,7 +12541,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -12555,7 +12555,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -12571,7 +12571,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -12579,7 +12579,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -12591,7 +12591,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -12599,7 +12599,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -12716,7 +12716,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -12755,13 +12755,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -12771,7 +12771,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -12797,7 +12797,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -12815,7 +12815,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -12847,19 +12847,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -12879,7 +12879,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -12891,7 +12891,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -12905,7 +12905,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -12921,7 +12921,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -12929,7 +12929,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -12941,7 +12941,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -12949,7 +12949,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -13066,7 +13066,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -13105,13 +13105,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -13121,7 +13121,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -13147,7 +13147,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -13165,7 +13165,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -13197,19 +13197,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -13229,7 +13229,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -13241,7 +13241,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -13255,7 +13255,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -13271,7 +13271,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -13279,7 +13279,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -13291,7 +13291,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -13299,7 +13299,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -13416,7 +13416,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -13455,13 +13455,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -13471,7 +13471,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -13497,7 +13497,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -13515,7 +13515,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -13547,19 +13547,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -13579,7 +13579,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -13591,7 +13591,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -13605,7 +13605,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -13621,7 +13621,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -13629,7 +13629,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -13641,7 +13641,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -13649,7 +13649,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -13766,7 +13766,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -13805,13 +13805,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -13821,7 +13821,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -13847,7 +13847,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -13865,7 +13865,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -13897,19 +13897,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -13929,7 +13929,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -13941,7 +13941,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -13955,7 +13955,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -13971,7 +13971,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -13979,7 +13979,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -13991,7 +13991,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -13999,7 +13999,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -14116,7 +14116,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -14155,13 +14155,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -14171,7 +14171,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -14197,7 +14197,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -14215,7 +14215,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -14247,19 +14247,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -14279,7 +14279,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -14291,7 +14291,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -14305,7 +14305,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -14321,7 +14321,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -14329,7 +14329,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -14341,7 +14341,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -14349,7 +14349,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -14466,7 +14466,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -14505,13 +14505,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -14521,7 +14521,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -14547,7 +14547,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -14565,7 +14565,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -14597,19 +14597,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -14629,7 +14629,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -14641,7 +14641,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -14655,7 +14655,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -14671,7 +14671,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -14679,7 +14679,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -14691,7 +14691,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -14699,7 +14699,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -14816,7 +14816,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -14855,13 +14855,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -14871,7 +14871,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -14897,7 +14897,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -14915,7 +14915,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -14947,19 +14947,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -14979,7 +14979,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -14991,7 +14991,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -15005,7 +15005,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -15021,7 +15021,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -15029,7 +15029,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -15041,7 +15041,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -15049,7 +15049,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -15166,7 +15166,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -15205,13 +15205,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -15221,7 +15221,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -15247,7 +15247,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -15265,7 +15265,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -15297,19 +15297,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -15329,7 +15329,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -15341,7 +15341,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -15355,7 +15355,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -15371,7 +15371,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -15379,7 +15379,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -15391,7 +15391,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -15399,7 +15399,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -15516,7 +15516,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -15555,13 +15555,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -15571,7 +15571,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -15597,7 +15597,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -15615,7 +15615,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -15647,19 +15647,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -15679,7 +15679,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -15691,7 +15691,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -15705,7 +15705,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -15721,7 +15721,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -15729,7 +15729,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -15741,7 +15741,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -15749,7 +15749,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -15866,7 +15866,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -15905,13 +15905,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -15921,7 +15921,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -15947,7 +15947,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -15965,7 +15965,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -15997,19 +15997,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -16029,7 +16029,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -16041,7 +16041,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -16055,7 +16055,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -16071,7 +16071,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -16079,7 +16079,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -16091,7 +16091,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -16099,7 +16099,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -16216,7 +16216,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -16255,13 +16255,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -16271,7 +16271,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -16297,7 +16297,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -16315,7 +16315,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -16347,19 +16347,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -16379,7 +16379,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -16391,7 +16391,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -16405,7 +16405,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -16421,7 +16421,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -16429,7 +16429,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -16441,7 +16441,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -16449,7 +16449,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -16566,7 +16566,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -16605,13 +16605,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -16621,7 +16621,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -16647,7 +16647,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -16665,7 +16665,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -16697,19 +16697,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -16729,7 +16729,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -16741,7 +16741,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -16755,7 +16755,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -16771,7 +16771,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -16779,7 +16779,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -16791,7 +16791,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -16799,7 +16799,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -16916,7 +16916,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -16955,13 +16955,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -16971,7 +16971,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -16997,7 +16997,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -17015,7 +17015,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -17047,19 +17047,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -17079,7 +17079,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -17091,7 +17091,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -17105,7 +17105,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -17121,7 +17121,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -17129,7 +17129,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -17141,7 +17141,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -17149,7 +17149,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -17266,7 +17266,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -17305,13 +17305,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -17321,7 +17321,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -17347,7 +17347,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -17365,7 +17365,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -17397,19 +17397,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -17429,7 +17429,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -17441,7 +17441,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -17455,7 +17455,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -17471,7 +17471,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -17479,7 +17479,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -17491,7 +17491,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -17499,7 +17499,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -17616,7 +17616,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -17655,13 +17655,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -17671,7 +17671,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -17697,7 +17697,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -17715,7 +17715,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -17747,19 +17747,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -17779,7 +17779,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -17791,7 +17791,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -17805,7 +17805,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -17821,7 +17821,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -17829,7 +17829,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -17841,7 +17841,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -17849,7 +17849,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -17966,7 +17966,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -18005,13 +18005,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -18021,7 +18021,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -18047,7 +18047,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -18065,7 +18065,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -18097,19 +18097,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -18129,7 +18129,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -18141,7 +18141,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -18155,7 +18155,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -18171,7 +18171,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -18179,7 +18179,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -18191,7 +18191,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -18199,7 +18199,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -18316,7 +18316,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -18355,13 +18355,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -18371,7 +18371,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -18397,7 +18397,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -18415,7 +18415,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -18447,19 +18447,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -18479,7 +18479,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -18491,7 +18491,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -18505,7 +18505,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -18521,7 +18521,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -18529,7 +18529,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -18541,7 +18541,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -18549,7 +18549,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -18666,7 +18666,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -18705,13 +18705,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -18721,7 +18721,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -18747,7 +18747,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -18765,7 +18765,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -18797,19 +18797,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -18829,7 +18829,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -18841,7 +18841,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -18855,7 +18855,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -18871,7 +18871,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -18879,7 +18879,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -18891,7 +18891,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -18899,7 +18899,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -19016,7 +19016,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -19055,13 +19055,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -19071,7 +19071,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -19097,7 +19097,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -19115,7 +19115,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -19147,19 +19147,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -19179,7 +19179,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -19191,7 +19191,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -19205,7 +19205,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -19221,7 +19221,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -19229,7 +19229,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -19241,7 +19241,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -19249,7 +19249,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -19366,7 +19366,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -19405,13 +19405,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -19421,7 +19421,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -19447,7 +19447,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -19465,7 +19465,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -19497,19 +19497,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -19529,7 +19529,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -19541,7 +19541,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -19555,7 +19555,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -19571,7 +19571,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -19579,7 +19579,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -19591,7 +19591,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -19599,7 +19599,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -19716,7 +19716,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -19755,13 +19755,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -19771,7 +19771,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -19797,7 +19797,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -19815,7 +19815,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -19847,19 +19847,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -19879,7 +19879,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -19891,7 +19891,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -19905,7 +19905,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -19921,7 +19921,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -19929,7 +19929,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -19941,7 +19941,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -19949,7 +19949,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -20066,7 +20066,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -20105,13 +20105,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -20121,7 +20121,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -20147,7 +20147,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -20165,7 +20165,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -20197,19 +20197,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -20229,7 +20229,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -20241,7 +20241,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -20255,7 +20255,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -20271,7 +20271,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -20279,7 +20279,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -20291,7 +20291,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -20299,7 +20299,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -20416,7 +20416,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -20455,13 +20455,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -20471,7 +20471,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -20497,7 +20497,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -20515,7 +20515,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -20547,19 +20547,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -20579,7 +20579,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -20591,7 +20591,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -20605,7 +20605,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -20621,7 +20621,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -20629,7 +20629,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -20641,7 +20641,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -20649,7 +20649,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -20766,7 +20766,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -20805,13 +20805,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -20821,7 +20821,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -20847,7 +20847,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -20865,7 +20865,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -20897,19 +20897,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -20929,7 +20929,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -20941,7 +20941,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -20955,7 +20955,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -20971,7 +20971,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -20979,7 +20979,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -20991,7 +20991,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -20999,7 +20999,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -21116,7 +21116,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -21155,13 +21155,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -21171,7 +21171,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -21197,7 +21197,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -21215,7 +21215,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -21247,19 +21247,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -21279,7 +21279,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -21291,7 +21291,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -21305,7 +21305,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -21321,7 +21321,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -21329,7 +21329,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -21341,7 +21341,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -21349,7 +21349,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -21466,7 +21466,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -21505,13 +21505,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -21521,7 +21521,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -21547,7 +21547,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -21565,7 +21565,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -21597,19 +21597,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -21629,7 +21629,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -21641,7 +21641,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -21655,7 +21655,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -21671,7 +21671,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -21679,7 +21679,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -21691,7 +21691,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -21699,7 +21699,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -21816,7 +21816,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -21855,13 +21855,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -21871,7 +21871,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -21897,7 +21897,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -21915,7 +21915,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -21947,19 +21947,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -21979,7 +21979,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -21991,7 +21991,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -22005,7 +22005,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -22021,7 +22021,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -22029,7 +22029,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -22041,7 +22041,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -22049,7 +22049,7 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
 
@@ -22166,7 +22166,7 @@ The WCAG (Web Content Accessibility Guidelines) is a set of guidelines for makin
 
 PAVE has integrated two types of PDF accessibility checkers. First, we have developed a PDF accessibility checker based on the Matterhorn Protocol. Second, we have integrated the VeraPDF Accessibility Checker, which allows users to check against the PDF/UA-1,PDF/UA-2, andWell-Tagged PDF standards. You can generate such an accessibility report during downloading the PDF.
 
-[](/videos/Download_1080p.mp4)
+[![Frame](/images/Download_1080p.jpg)](/videos/Download_1080p.mp4)
 
 #### Why can PDF accessibility checkers be misleading for unexperienced users?
 
@@ -22205,13 +22205,13 @@ In PDF documents, a "region" refers to a logical grouping of content with a spec
 
 Yes, PAVE 2.0 can automatically detect the regions for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectRegions_1080p.mp4)
+[![Frame](/images/DetectRegions_1080p.jpg)](/videos/DetectRegions_1080p.mp4)
 
 #### How can I create a new region?
 
 Draw a rectangle on page view by clicking on the page and dragging the mouse to select the region. Important, you can only select elements that are not already part of a region. Red highlights elements that could be selected and green shows the selected elements.
 
-[](/videos/NewRegion_1080p.mp4)
+[![Frame](/images/NewRegion_1080p.jpg)](/videos/NewRegion_1080p.mp4)
 
 #### How can I change the elements of a region?
 
@@ -22221,7 +22221,7 @@ Select a region. The selected region will be highlighted and eight points to res
 
 Select a region. On the left side of the screen, you can change the type via the dropdown menu.
 
-[](/videos/ChangeRegionType_1080p.mp4)
+[![Frame](/images/ChangeRegionType_1080p.jpg)](/videos/ChangeRegionType_1080p.mp4)
 
 #### Which region types exist?
 
@@ -22247,7 +22247,7 @@ Select a region. On the left side of the screen, you can delete the region via t
 
 First, create regions for each page or column. Then select the regions in the correct order by using multi-select or by holding down the Ctrl/CMD key. Finally, connect the regions with the "Combine Regions" button.
 
-[](/videos/ConnectRegions_1080p.mp4)
+[![Frame](/images/ConnectRegions_1080p.jpg)](/videos/ConnectRegions_1080p.mp4)
 
 #### How can I tag a Link?
 
@@ -22265,7 +22265,7 @@ A link annotation is a non-visual element in a PDF that defines an interactive a
 * Opens a URL, or
 * Navigates to another location within the document.
 
-[](/videos/Link_1080p.mp4)
+[![Frame](/images/Link_1080p.jpg)](/videos/Link_1080p.mp4)
 
 #### How can I tag a footnote?
 
@@ -22297,19 +22297,19 @@ In some documents, especially flyers or visually rich layouts, the reading order
 
 Yes, PAVE 2.0 can automatically detect the reading order for you. However, it is important to note that it is always necessary to check the results.
 
-[](/videos/DetectReadingOrder_1080p.mp4)
+[![Frame](/images/DetectReadingOrder_1080p.jpg)](/videos/DetectReadingOrder_1080p.mp4)
 
 #### How can I define the reading order manually?
 
 Use the draw reading order function, which allows you to draw a line on the page view to define the reading order.
 
-[](/videos/DrawReadingOrder_1080p.mp4)
+[![Frame](/images/DrawReadingOrder_1080p.jpg)](/videos/DrawReadingOrder_1080p.mp4)
 
 #### How can I adjust the order of one item in the reading order?
 
 Select the element in the reading order list and move it up or down.
 
-[](/videos/MoveReadingOrderItem_1080p.mp4)
+[![Frame](/images/MoveReadingOrderItem_1080p.jpg)](/videos/MoveReadingOrderItem_1080p.mp4)
 
 ### Step 3: Heading Structure
 
@@ -22329,7 +22329,7 @@ There exists three options for tagging the title:
 
 It exists no standard for tagging the subtitle. As a result, you can tag it together with the title or create a new paragraph or heading for it with the appropriate heading level, depending on the tagging of the title.
 
-[](/videos/HeadingStructure_1080p.mp4)
+[![Frame](/images/HeadingStructure_1080p.jpg)](/videos/HeadingStructure_1080p.mp4)
 
 ### Step 4: Tables
 
@@ -22341,7 +22341,7 @@ Screen readers cannot automatically detect table structures, so you need to defi
 
 Use the detect table structure function, to start not from the scratch. Draw a line on the page view to separate table rows or columns. Select a line and select combine rows or columns to delete the line.
 
-[](/videos/TableNewColumnRows_1080p.mp4)[](/videos/TableRemoveRow_1080p.mp4)
+[![Frame](/images/TableNewColumnRows_1080p.jpg)](/videos/TableNewColumnRows_1080p.mp4)[![Frame](/images/TableRemoveRow_1080p.jpg)](/videos/TableRemoveRow_1080p.mp4)
 
 #### How can I tag irregular tables?
 
@@ -22355,7 +22355,7 @@ Select the heading options, which fits best. There exists three options for tagg
 * First Column
 * Both
 
-[](/videos/TableChangeHeading_1080p.mp4)
+[![Frame](/images/TableChangeHeading_1080p.jpg)](/videos/TableChangeHeading_1080p.mp4)
 
 #### How can I marked multiple rows or columns as heading cells?
 
@@ -22371,7 +22371,7 @@ Like tables, screen readers cannot automatically detect list structures. You mus
 
 Separate list items by drawing a horizontal line between them. You can delete lines by selecting them and select combine list items.
 
-[](/videos/NewListItems_1080p.mp4)
+[![Frame](/images/NewListItems_1080p.jpg)](/videos/NewListItems_1080p.mp4)
 
 ### Step 6: Figures
 
@@ -22379,7 +22379,7 @@ Separate list items by drawing a horizontal line between them. You can delete li
 
 Figures often contain important information that needs to be accessible. To make figures accessible to screen readers, you should provide descriptive alternative text. If the figure is purely decorative (e.g., a logo), mark it as an artifact. The alternative text of figures should not be a copy of the caption. Instead it should describe the key information of the figure. To check the written alternative text, you can use image generators, such as ChatGPT. For scientific charts, you should have a short overview (1-2 sentences) with information about the chart type, title, axis names, axis range, and legend. After this, you should describe prominent visual elements, such as extreme values, trends, or comparisons in up to 7 sentences.
 
-[](/videos/Figure_1080p.mp4)
+[![Frame](/images/Figure_1080p.jpg)](/videos/Figure_1080p.mp4)
 
 ### Step 7: Mathematical Formulas
 
@@ -22391,7 +22391,7 @@ Just like figures, mathematical formulas need alternative text to ensure that sc
 
 A math editor is a tool that helps create alternative text for mathematical formulas. By using LaTeX code or an interactive editor, the formula is reconstructed, and the corresponding alternative text, following the MathSpeak rules, is generated automatically.
 
-[](/videos/MathEditor_1080p.mp4)[](/videos/MathEditor2_1080p.mp4)
+[![Frame](/images/MathEditor_1080p.jpg)](/videos/MathEditor_1080p.mp4)[![Frame](/images/MathEditor2_1080p.jpg)](/videos/MathEditor2_1080p.mp4)
 
 ### Step 8: Meta Information
 
@@ -22399,6 +22399,6 @@ A math editor is a tool that helps create alternative text for mathematical form
 
 Meta information, such as the document’s title, author, and language, enhances accessibility. While most meta information is set automatically, it’s essential that the user defines these details to ensure proper screen reader functionality.
 
-[](/videos/MetaInformation_1080p.mp4)
+[![Frame](/images/MetaInformation_1080p.jpg)](/videos/MetaInformation_1080p.mp4)
 
 ---
