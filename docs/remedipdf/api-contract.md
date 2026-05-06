@@ -21,6 +21,8 @@ type ErrorCode =
   | "document_not_found"
   | "raw_hash_mismatch"
   | "invalid_patch_schema"
+  | "invalid_page_number"
+  | "page_image_not_available"
   | "unknown_target_id"
   | "unsupported_operation"
   | "patch_conflict";
@@ -170,6 +172,240 @@ Example:
 | --- | --- |
 | `200 OK` | Structure state was returned. |
 | `404 Not Found` | The document does not exist. |
+
+## GET /documents/{id}/pages/{pageNumber}/overlay
+
+Returns viewer-ready overlay data for a single page. The response is derived from the normalized RemediPDF document and includes the page's regions plus the editor identifiers needed by a PAVE-style viewer.
+
+### Request
+
+```http
+GET /documents/{id}/pages/{pageNumber}/overlay
+Accept: application/json
+```
+
+Path parameters:
+
+| Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| `id` | `DocumentId` | yes | Document identifier. |
+| `pageNumber` | `number` | yes | Positive page number. Invalid or out-of-range values return `400`. |
+
+### 200 Response
+
+Shape:
+
+```ts
+type GetPageOverlayResponse = {
+  schema: "remedipdf.page-overlay.v0";
+  documentId: DocumentId;
+  pageNumber: number;
+  pageId: PageId;
+  pageSize: { width: number; height: number; unit: "pt" } | null;
+  rawHash: string;
+  regions: PageOverlayRegion[];
+};
+
+type PageOverlayRegion = {
+  regionId: RegionId;
+  pageId: PageId;
+  bbox: BBox;
+  type: RegionType;
+  pdfRole: PdfRole;
+  textPreview: string | null;
+  artifact: ArtifactState;
+  review: ReviewStatus;
+  readingOrderIndex: number | null;
+  tableId?: TableId;
+  listId?: ListId;
+  listItem?: { level: number; ordinal: number; parentItemId?: ListItemId };
+  assetId?: AssetId;
+  captionId?: CaptionId;
+  parentId?: RegionId;
+  childIds?: RegionId[];
+};
+```
+
+`readingOrderIndex` is the zero-based position of the overlay region within `readingOrder.pageOrder[pageId]`. Nested table cells, list items, and other non-top-level regions return `null`.
+
+### Example
+
+```json
+{
+  "schema": "remedipdf.page-overlay.v0",
+  "documentId": "doc:123",
+  "pageNumber": 1,
+  "pageId": "page:1",
+  "pageSize": null,
+  "rawHash": "sha256:8f3e1d5a",
+  "regions": [
+    {
+      "regionId": "region:odl:1",
+      "pageId": "page:1",
+      "bbox": {
+        "left": 200.891,
+        "bottom": 706.938,
+        "right": 394.152,
+        "top": 745.132,
+        "unit": "pt",
+        "origin": "bottom-left"
+      },
+      "type": "heading",
+      "pdfRole": "H1",
+      "textPreview": "Sample",
+      "artifact": {
+        "isArtifact": false
+      },
+      "review": {
+        "state": "approved",
+        "reasons": [],
+        "updatedBy": "system"
+      },
+      "readingOrderIndex": 0
+    }
+  ]
+}
+```
+
+### Status Codes
+
+| Status | Meaning |
+| --- | --- |
+| `200 OK` | Page overlay data was returned. |
+| `400 Bad Request` | The page number is invalid or out of range. |
+| `404 Not Found` | The document does not exist. |
+
+## GET /documents/{id}/pages/{pageNumber}/render-info
+
+Returns render metadata for a cached page image. The endpoint is a contract stub for a PAVE-style viewer and does not rasterize PDFs. The service reads page images and their metadata from a configured cache directory.
+
+### Cache Layout
+
+When configured with `page_image_dir`, the service looks for page assets under a document-specific directory:
+
+```text
+<page_image_dir>/<documentId-safe>/page-<pageNumber>.png
+<page_image_dir>/<documentId-safe>/page-<pageNumber>.json
+```
+
+The JSON sidecar must contain:
+
+```ts
+type PageRenderCacheMetadata = {
+  pageSize: { width: number; height: number; unit: "pt" };
+  imageWidth: number;
+  imageHeight: number;
+};
+```
+
+### Request
+
+```http
+GET /documents/{id}/pages/{pageNumber}/render-info
+Accept: application/json
+```
+
+### 200 Response
+
+Shape:
+
+```ts
+type PageRenderInfo = {
+  schema: "remedipdf.page-render-info.v0";
+  documentId: DocumentId;
+  pageNumber: number;
+  pageId: PageId;
+  pageSize: { width: number; height: number; unit: "pt" };
+  imageWidth: number;
+  imageHeight: number;
+  scale: number | null;
+  coordinateSystem: "pdf-bottom-left";
+  overlayCoordinateSystem: "css-top-left";
+  transform: {
+    scaleX: number;
+    scaleY: number;
+    left: string;
+    top: string;
+    width: string;
+    height: string;
+  };
+};
+```
+
+`scale` is the uniform scale factor when the cached image preserves aspect ratio. When the horizontal and vertical scales differ, `scale` is `null` and the viewer should use `transform.scaleX` and `transform.scaleY`.
+
+The `transform` fields are intended for CSS overlay math:
+
+- `left = bbox.left * scaleX`
+- `top = (pageSize.height - bbox.top) * scaleY`
+- `width = (bbox.right - bbox.left) * scaleX`
+- `height = (bbox.top - bbox.bottom) * scaleY`
+
+### Example
+
+```json
+{
+  "schema": "remedipdf.page-render-info.v0",
+  "documentId": "doc:123",
+  "pageNumber": 1,
+  "pageId": "page:1",
+  "pageSize": {
+    "width": 612,
+    "height": 792,
+    "unit": "pt"
+  },
+  "imageWidth": 1224,
+  "imageHeight": 1584,
+  "scale": 2,
+  "coordinateSystem": "pdf-bottom-left",
+  "overlayCoordinateSystem": "css-top-left",
+  "transform": {
+    "scaleX": 2,
+    "scaleY": 2,
+    "left": "bbox.left * scaleX",
+    "top": "(pageSize.height - bbox.top) * scaleY",
+    "width": "(bbox.right - bbox.left) * scaleX",
+    "height": "(bbox.top - bbox.bottom) * scaleY"
+  }
+}
+```
+
+### Status Codes
+
+| Status | Meaning |
+| --- | --- |
+| `200 OK` | Page render metadata was returned. |
+| `400 Bad Request` | The page number is invalid or out of range. |
+| `404 Not Found` | The document does not exist or the page image metadata is unavailable. |
+
+## GET /documents/{id}/pages/{pageNumber}/image
+
+Returns the cached page image when the configured cache contains one. This endpoint is a stub for the viewer contract and does not rasterize PDFs.
+
+### Status Codes
+
+| Status | Meaning |
+| --- | --- |
+| `200 OK` | Cached image was returned. |
+| `400 Bad Request` | The page number is invalid or out of range. |
+| `404 Not Found` | The document does not exist or the page image is unavailable. |
+
+### Image Error
+
+When no cached image exists, the server returns:
+
+```json
+{
+  "error": {
+    "code": "page_image_not_available",
+    "message": "Page image is not available.",
+    "documentId": "doc:123",
+    "details": {
+      "pageNumber": 1
+    }
+  }
+}
+```
 
 ## PATCH /documents/{id}/structure
 
