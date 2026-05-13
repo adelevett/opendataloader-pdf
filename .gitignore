@@ -69,6 +69,13 @@ logs/
 **/tmp/
 **/temp/
 
+# Calibre pipeline workspace and generated artifacts
+.calibre-work/
+.calibre-artifacts/
+calibre-work/
+calibre-artifacts/
+CALIBRE_PIPELINE_STATE/
+
 # Git worktrees
 .worktrees/
 
@@ -78,4 +85,3 @@ content/docs/
 # Configuration files
 .claude/settings.local.json
 .claude/plans/
-
