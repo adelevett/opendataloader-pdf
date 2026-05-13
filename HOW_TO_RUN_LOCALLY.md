@@ -17,6 +17,9 @@ C:\Users\delevetta\opendataloader-pdf\python\opendataloader-pdf
 C:\Users\delevetta\opendataloader-pdf\python\opendataloader-pdf\.venv
 ```
 
+There is no repo-root `.venv` in this workspace. The virtual environment that
+was created and tested lives under `python\opendataloader-pdf\.venv`.
+
 Use the project venv through `uv run` from `python\opendataloader-pdf`, or call:
 
 ```powershell
@@ -367,3 +370,38 @@ Not completed:
 - Full Java tests were not used as the final verification path. `mvn -B clean package -P release` was attempted first and returned non-zero after a long test run with extensive PDF processing warnings.
 - Node package setup/build/test was not run because `pnpm` was not installed.
 - A full 82-page scanned-PDF OCR run did not complete with full success. It returned `partial_success` with `std::bad_alloc` on later pages.
+
+## Calibre Library Audit Pipeline
+
+The Calibre pipeline keeps its outputs inside the repo in ignored workdirs:
+
+- `.calibre-work`
+- `.calibre-artifacts`
+
+Classify the inventory first:
+
+```powershell
+cd C:\Users\delevetta\opendataloader-pdf
+python .\tools\calibre_library\classify_inventory.py
+```
+
+Then run the ISBN audit:
+
+```powershell
+cd C:\Users\delevetta\opendataloader-pdf
+python .\tools\calibre_library\audit_isbn.py `
+  --groups-jsonl .\.calibre-work\book_groups.jsonl `
+  --inventory-json .\.calibre-work\inventory_manifest.json
+```
+
+The audit pass checks path-based ISBNs first, then inspects the first few pages of target PDFs only when the path signal is weak or absent. Add `--allow-hybrid-fallback` to let low-text pages fall back to the local hybrid service on `127.0.0.1:5002`.
+
+To gather ISBN location data on a representative sample of titles:
+
+```powershell
+cd C:\Users\delevetta\opendataloader-pdf
+python .\tools\calibre_library\sample_isbn_sources.py `
+  --pages 1-10 `
+  --sample-size 18 `
+  --per-group-type 3
+```
