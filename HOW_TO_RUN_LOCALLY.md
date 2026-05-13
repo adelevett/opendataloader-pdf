@@ -396,12 +396,67 @@ python .\tools\calibre_library\audit_isbn.py `
 
 The audit pass checks path-based ISBNs first, then inspects the first few pages of target PDFs only when the path signal is weak or absent. Add `--allow-hybrid-fallback` to let low-text pages fall back to the local hybrid service on `127.0.0.1:5002`.
 
+Current audit behavior (in code):
+
+- `audit_isbn.py` defaults to `--pages 1-4` and `--max-scan-targets 5`.
+- Chapter-like fallback remains opt-in (`--allow-chapter-fallback`), so split/page-range files are skipped by default.
+- Low-signal components are excluded by class/name conventions before scanning (glossary/index/references/bibliography/works-cited/end-matter/back-matter naming patterns).
+- ISBN extraction rejects URL/reference-like contexts and only accepts ISBN-13 values with `978/979` prefix plus valid checksum.
+
 To gather ISBN location data on a representative sample of titles:
 
 ```powershell
 cd C:\Users\delevetta\opendataloader-pdf
 python .\tools\calibre_library\sample_isbn_sources.py `
   --pages 1-10 `
-  --sample-size 18 `
-  --per-group-type 3
+  --sample-size 100 `
+  --per-group-type 5
 ```
+
+Latest calibration snapshot (100-group stratified sample, 2026-05-13):
+
+- `with_isbn`: `76`
+- `unresolved`: `24`
+- `conflict`: `25`
+
+Compared to the prior run (`80/20/32`), unresolved increased while conflicts dropped. This is expected from stricter false-positive suppression and exclusion of glossary/index/reference-like sources.
+
+### Operator Quickstart (Recommended Sequence)
+
+Run from `C:\Users\delevetta\opendataloader-pdf`.
+
+1. Rebuild classification manifests:
+
+```powershell
+python .\tools\calibre_library\classify_inventory.py
+```
+
+2. Run calibration sample (fast health check of policy behavior):
+
+```powershell
+python .\tools\calibre_library\sample_isbn_sources.py `
+  --pages 1-10 `
+  --sample-size 100 `
+  --per-group-type 5
+```
+
+3. Run full offline audit (roadmap Phase 3 deliverable):
+
+```powershell
+python .\tools\calibre_library\audit_isbn.py `
+  --groups-jsonl .\.calibre-work\book_groups.jsonl `
+  --inventory-json .\.calibre-work\inventory_manifest.json
+```
+
+4. Review generated outputs:
+
+- `.calibre-work\isbn_audit_groups.jsonl`
+- `.calibre-work\isbn_audit_candidates.jsonl`
+- `.calibre-artifacts\isbn_audit_summary.md`
+- `.calibre-artifacts\isbn_source_sample_summary.md`
+
+### When To Re-Run Which Command
+
+- Re-run `sample_isbn_sources.py` after any extraction or filtering logic change.
+- Re-run `audit_isbn.py` after any accepted calibration change and before metadata fetch/import planning.
+- Re-run `classify_inventory.py` only when inventory source or grouping logic changes.

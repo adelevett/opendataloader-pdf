@@ -29,6 +29,26 @@ from tools.calibre_library.io import load_jsonl, write_json, write_jsonl
 from tools.calibre_library.paths import calibre_artifacts_dir, calibre_work_dir, ensure_calibre_dirs
 
 
+HIGH_PRIORITY_SCAN_CLASSES = {
+    "front_matter_pdf",
+    "toc_pdf",
+    "index_pdf",
+    "preface_intro_pdf",
+}
+SECONDARY_PRIORITY_SCAN_CLASSES = {
+    "full_pdf_candidate",
+}
+TERTIARY_PRIORITY_SCAN_CLASSES = {
+    "appendix_pdf",
+    "chapter_split_pdf",
+    "page_range_pdf",
+    "part_unit_section_pdf",
+}
+
+DEFAULT_SAMPLE_SIZE = 100
+DEFAULT_PER_GROUP_TYPE = 5
+
+
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Gather ISBN source-location data from a stratified sample of book groups."
@@ -65,14 +85,14 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--sample-size",
         type=int,
-        default=18,
-        help="Maximum number of groups to sample in total",
+        default=DEFAULT_SAMPLE_SIZE,
+        help="Maximum number of groups to sample in total for calibration",
     )
     parser.add_argument(
         "--per-group-type",
         type=int,
-        default=3,
-        help="Maximum groups to sample from each group_type",
+        default=DEFAULT_PER_GROUP_TYPE,
+        help="Maximum groups to sample from each group_type before backfilling by priority",
     )
     parser.add_argument(
         "--seed",
@@ -84,6 +104,11 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--allow-hybrid-fallback",
         action="store_true",
         help="Allow OCR fallback on low-text scan targets",
+    )
+    parser.add_argument(
+        "--allow-chapter-fallback",
+        action="store_true",
+        help="Allow fallback scanning of chapter-like split and page-range PDFs",
     )
     parser.add_argument(
         "--hybrid-url",
@@ -128,6 +153,41 @@ def _stable_key(seed: int, value: str) -> str:
     return digest
 
 
+def _selection_priority(group: dict[str, Any]) -> tuple[int, str]:
+    scan_target_classes = [str(item) for item in group.get("scan_target_classes") or []]
+    group_type = str(group.get("group_type") or "unknown")
+
+    if any(scan_class in HIGH_PRIORITY_SCAN_CLASSES for scan_class in scan_target_classes):
+        return 0, "front_matter_like"
+    if any(scan_class in SECONDARY_PRIORITY_SCAN_CLASSES for scan_class in scan_target_classes):
+        return 1, "full_pdf_candidate"
+    if scan_target_classes:
+        if any(scan_class in TERTIARY_PRIORITY_SCAN_CLASSES for scan_class in scan_target_classes):
+            return 2, "split_or_collection"
+        return 2, "other_scan_targets"
+    if group_type == "artifact_group":
+        return 3, "artifact_group"
+    return 3, "unclassified"
+
+
+def _method_tag(args: argparse.Namespace) -> str:
+    hybrid_state = "hybrid" if args.allow_hybrid_fallback else "native"
+    chapter_state = "chapter-fallback=on" if args.allow_chapter_fallback else "chapter-fallback=off"
+    struct_tree_state = "struct-tree" if args.use_struct_tree else "no-struct-tree"
+    return (
+        "catalog-stratified|"
+        "front-matter-first|"
+        f"pages={args.pages}|"
+        f"max-targets={args.max_scan_targets}|"
+        f"sample-size={args.sample_size}|"
+        f"per-group-type={args.per_group_type}|"
+        f"{hybrid_state}|"
+        f"{chapter_state}|"
+        f"{struct_tree_state}|"
+        f"native-threshold={args.native_char_threshold}"
+    )
+
+
 def _choose_sample(groups: list[dict[str, Any]], sample_size: int, per_group_type: int, seed: int) -> list[dict[str, Any]]:
     by_type: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for group in groups:
@@ -144,7 +204,13 @@ def _choose_sample(groups: list[dict[str, Any]], sample_size: int, per_group_typ
         sample.append(group)
 
     for group_type in sorted(by_type):
-        ranked = sorted(by_type[group_type], key=lambda item: _stable_key(seed, str(item.get("group_id") or "")))
+        ranked = sorted(
+            by_type[group_type],
+            key=lambda item: (
+                _selection_priority(item)[0],
+                _stable_key(seed, str(item.get("group_id") or "")),
+            ),
+        )
         for group in ranked[:per_group_type]:
             add_group(group)
             if len(sample) >= sample_size:
@@ -152,7 +218,12 @@ def _choose_sample(groups: list[dict[str, Any]], sample_size: int, per_group_typ
 
     if len(sample) < sample_size:
         remaining = [group for group in groups if str(group.get("group_id") or "") not in seen_ids]
-        remaining.sort(key=lambda item: _stable_key(seed, str(item.get("group_id") or "")))
+        remaining.sort(
+            key=lambda item: (
+                _selection_priority(item)[0],
+                _stable_key(seed, str(item.get("group_id") or "")),
+            )
+        )
         for group in remaining:
             add_group(group)
             if len(sample) >= sample_size:
@@ -163,6 +234,10 @@ def _choose_sample(groups: list[dict[str, Any]], sample_size: int, per_group_typ
 
 def _render_summary_md(manifest: dict[str, Any]) -> str:
     summary = manifest["summary"]
+    method = manifest["method"]
+    resolved_rows = [row for row in manifest.get("sample_rows", []) if row.get("best_isbn")]
+    unresolved_rows = [row for row in manifest.get("sample_rows", []) if not row.get("best_isbn")]
+    conflict_rows = [row for row in manifest.get("sample_rows", []) if row.get("status") == "conflict"]
     lines: list[str] = [
         "# ISBN Source Sample",
         "",
@@ -172,6 +247,22 @@ def _render_summary_md(manifest: dict[str, Any]) -> str:
         f"- per_group_type: {manifest['per_group_type']}",
         f"- pages: {manifest['pages']}",
         f"- allow_hybrid_fallback: {manifest['allow_hybrid_fallback']}",
+        f"- sampling_policy: {manifest['sampling_policy']}",
+        "",
+        "## Method",
+        f"- method_tag: {manifest['method_tag']}",
+        f"- sample_size: {method['sample_size']}",
+        f"- per_group_type: {method['per_group_type']}",
+        f"- pages: {method['pages']}",
+        f"- max_scan_targets: {method['max_scan_targets']}",
+        f"- allow_hybrid_fallback: {method['allow_hybrid_fallback']}",
+        f"- allow_chapter_fallback: {method['allow_chapter_fallback']}",
+        f"- hybrid_backend: {method['hybrid_backend']}",
+        f"- hybrid_mode: {method['hybrid_mode']}",
+        f"- hybrid_ocr_strategy: {method['hybrid_ocr_strategy']}",
+        f"- use_struct_tree: {method['use_struct_tree']}",
+        f"- native_char_threshold: {method['native_char_threshold']}",
+        f"- selection_policy: {method['selection_policy']}",
         "",
         "## Counts",
         f"- groups_total: {summary['groups_total']}",
@@ -196,12 +287,47 @@ def _render_summary_md(manifest: dict[str, Any]) -> str:
     for name, count in sorted(summary.get("best_page_number_counts", {}).items(), key=lambda item: (-item[1], item[0])):
         lines.append(f"- {name}: {count}")
 
+    lines.extend(["", "## Selection Priority"])
+    for name, count in sorted(summary.get("selection_priority_counts", {}).items(), key=lambda item: (-item[1], item[0])):
+        lines.append(f"- {name}: {count}")
+
+    lines.extend(["", "## Findings"])
+    lines.append(f"- resolved: {len(resolved_rows)}")
+    lines.append(f"- unresolved: {len(unresolved_rows)}")
+    lines.append(f"- conflict: {len(conflict_rows)}")
+
+    if resolved_rows:
+        lines.append("")
+        lines.append("### Resolved")
+        for row in resolved_rows[:20]:
+            lines.append(
+                f"- {row['group_id']} | {row['best_isbn']} | {row['best_source_kind']} | "
+                f"{row['best_source_label']} | page {row['best_page_number']} | "
+                f"method={row['method_tag']}"
+            )
+
+    if conflict_rows:
+        lines.append("")
+        lines.append("### Conflicts")
+        for row in conflict_rows[:20]:
+            lines.append(
+                f"- {row['group_id']} | {row['group_type']} | {row['best_isbn']} | "
+                f"{row['best_source_kind']} | method={row['method_tag']}"
+            )
+
+    if unresolved_rows:
+        lines.append("")
+        lines.append("### Unresolved")
+        for row in unresolved_rows[:20]:
+            lines.append(f"- {row['group_id']} | {row['group_type']} | method={row['method_tag']}")
+
     lines.extend(["", "## Sample Rows"])
     for row in manifest.get("sample_rows", [])[:20]:
         lines.append(
             f"- {row['group_id']} | {row['group_type']} | {row['title_guess']} | "
             f"{row['status']} | {row['best_isbn']} | {row['best_source_kind']} | "
-            f"{row['best_source_label']} | page {row['best_page_number']}"
+            f"{row['best_source_label']} | page {row['best_page_number']} | {row['selection_priority_label']} | "
+            f"{row['method_tag']}"
         )
 
     return "\n".join(lines) + "\n"
@@ -221,8 +347,10 @@ def main(argv: list[str] | None = None) -> int:
     best_source_kind_counts: Counter[str] = Counter()
     best_source_label_counts: Counter[str] = Counter()
     best_page_number_counts: Counter[str] = Counter()
+    selection_priority_counts: Counter[str] = Counter()
     status_counts: Counter[str] = Counter()
     errors = 0
+    method_tag = _method_tag(args)
 
     for group in sample_groups:
         audit_record, consolidated = _scan_group(
@@ -232,6 +360,7 @@ def main(argv: list[str] | None = None) -> int:
             path_confidence_threshold=0.9,
             verify_path_candidates=False,
             allow_hybrid_fallback=args.allow_hybrid_fallback,
+            allow_chapter_fallback=args.allow_chapter_fallback,
             hybrid_url=args.hybrid_url,
             hybrid_backend=args.hybrid_backend,
             hybrid_mode=args.hybrid_mode,
@@ -241,6 +370,7 @@ def main(argv: list[str] | None = None) -> int:
         )
 
         title_guess = str(group.get("parent_title_key") or group.get("parent_dir") or "")
+        selection_priority_bucket, selection_priority_label = _selection_priority(group)
         row = {
             "group_id": audit_record["group_id"],
             "title_guess": title_guess,
@@ -260,6 +390,9 @@ def main(argv: list[str] | None = None) -> int:
             "scan_attempts": audit_record["scan_attempts"],
             "path_candidate_isbns": audit_record["path_candidate_isbns"],
             "path_candidate_best_confidence": audit_record["path_candidate_best_confidence"],
+            "selection_priority_bucket": selection_priority_bucket,
+            "selection_priority_label": selection_priority_label,
+            "method_tag": method_tag,
         }
         sample_rows.append(row)
         candidate_rows.extend(
@@ -278,6 +411,7 @@ def main(argv: list[str] | None = None) -> int:
             best_source_label_counts[str(audit_record["best_source_label"])] += 1
         if audit_record["best_page_number"] is not None:
             best_page_number_counts[str(audit_record["best_page_number"])] += 1
+        selection_priority_counts[selection_priority_label] += 1
         if any(attempt.get("status") == "error" for attempt in audit_record.get("scan_attempts", [])):
             errors += 1
 
@@ -301,6 +435,28 @@ def main(argv: list[str] | None = None) -> int:
         "per_group_type": args.per_group_type,
         "pages": args.pages,
         "allow_hybrid_fallback": args.allow_hybrid_fallback,
+        "allow_chapter_fallback": args.allow_chapter_fallback,
+        "method_tag": method_tag,
+        "sampling_policy": (
+            "front_matter_like > full_pdf_candidate > split_or_collection > artifact_group/unclassified; "
+            "chapter-like fallback disabled by default; per-group-type deterministic hash tie-break"
+        ),
+        "method": {
+            "sample_size": args.sample_size,
+            "per_group_type": args.per_group_type,
+            "pages": args.pages,
+            "max_scan_targets": args.max_scan_targets,
+            "allow_hybrid_fallback": args.allow_hybrid_fallback,
+            "allow_chapter_fallback": args.allow_chapter_fallback,
+            "hybrid_url": args.hybrid_url,
+            "hybrid_backend": args.hybrid_backend,
+            "hybrid_mode": args.hybrid_mode,
+            "hybrid_ocr_strategy": args.hybrid_ocr_strategy,
+            "use_struct_tree": args.use_struct_tree,
+            "native_char_threshold": args.native_char_threshold,
+            "seed": args.seed,
+            "selection_policy": "front_matter_like > full_pdf_candidate > split_or_collection > artifact_group/unclassified; chapter-like fallback disabled by default; per-group-type deterministic hash tie-break",
+        },
         "summary": {
             "groups_total": groups_total,
             "groups_sampled": groups_sampled,
@@ -314,6 +470,7 @@ def main(argv: list[str] | None = None) -> int:
             "best_source_kind_counts": dict(best_source_kind_counts),
             "best_source_label_counts": dict(best_source_label_counts),
             "best_page_number_counts": dict(best_page_number_counts),
+            "selection_priority_counts": dict(selection_priority_counts),
             "status_counts": dict(status_counts),
         },
         "sample_rows": sample_rows,

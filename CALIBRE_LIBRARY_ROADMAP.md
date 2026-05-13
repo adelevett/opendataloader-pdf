@@ -2,6 +2,18 @@
 
 This roadmap defines an incremental path from the current corpus inventory to a portable Calibre library on flash storage, while keeping the 5 TB source disk read-only.
 
+## Current Status Snapshot (2026-05-13)
+
+- Calibration sample size: `100` groups (stratified by group type).
+- Latest sample result: `with_isbn=76`, `unresolved=24`, `conflict=25`.
+- Prior sample result: `with_isbn=80`, `unresolved=20`, `conflict=32`.
+- Interpretation: stricter filtering reduced ambiguous/conflicting matches at the cost of a modest increase in unresolved groups.
+
+Practical implication:
+
+- Proceed with conservative ISBN acceptance for Phase 3 outputs.
+- Treat unresolved/conflict groups as explicit review workload, not extraction failures.
+
 ## Current Findings
 
 - The OCR/extraction working directory is `C:\Users\delevetta\opendataloader-pdf\python\opendataloader-pdf`; `HOW_TO_RUN_LOCALLY.md` says to use `uv run` from that package directory or call the package venv Python directly.
@@ -212,16 +224,30 @@ Scan order:
 2. Standalone/full PDF candidate text.
 3. Front matter files.
 4. TOC/contents files.
-5. First few pages of chapter split files.
+5. First few pages of chapter split files only when chapter fallback is explicitly enabled.
 6. OCR fallback only when extracted text is missing or too short.
+
+Default exclusions before scanning:
+
+- Skip glossary/index/bibliography-style components by file class.
+- Skip files with naming signals such as `glossary`, `index`, `references`, `bibliograph*`, `works cited`, `end matter`, `back matter`.
 
 Recommended extraction policy:
 
 ```text
 normal text extraction first
-scan first 8 pages by default
+scan first 4 pages by default in baseline audit
+use pages 1-10 for calibration samples and unresolved escalation
 scan more pages only for front matter files with very low text yield
 OCR only when normal extraction returns insufficient text
+```
+
+Candidate hygiene policy:
+
+```text
+accept ISBN-13 only when prefix is 978 or 979 and checksum is valid
+reject URL/reference-like numeric tokens found in web/DOI/reference contexts
+prefer ISBN cues (ISBN/ISBN-10/ISBN-13/eISBN) when ranking candidate confidence
 ```
 
 ISBN candidate fields:
@@ -261,6 +287,13 @@ Acceptance criteria:
 - OCR usage percentage is known.
 - Failed extraction paths are logged.
 - No network metadata calls occur in this phase.
+
+Decision gate to move to Phase 4:
+
+- Green: `path_resolved` + `text_resolved` groups with one canonical ISBN candidate.
+- Yellow: `conflict` groups (multiple canonical candidates), send to review queue.
+- Yellow: `unresolved` groups, keep for escalation pass (pages `1-10`, optional chapter fallback, optional hybrid fallback).
+- Red: extraction errors on source paths, fix extractor/runtime first.
 
 ## Phase 4: Curation and Deduplication
 

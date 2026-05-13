@@ -6,6 +6,8 @@ from typing import Iterable
 
 ISBN10_RE = re.compile(r"(?<!\d)(\d[\d\s-]{8,}[0-9Xx])(?!\d)")
 ISBN13_RE = re.compile(r"(?<!\d)(97[89][\d\s-]{10,}[0-9Xx])(?!\d)")
+ISBN_CUE_RE = re.compile(r"\b(isbn(?:-1[03])?|eisbn|ebook\s+isbn)\b", re.IGNORECASE)
+URL_CONTEXT_RE = re.compile(r"(https?://|www\.|\.html\b|\bar\d{10,13}\b|\bdoi\s*:?)", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -66,7 +68,8 @@ def isbn10_to_isbn13(value: str) -> str | None:
 
 def normalize_isbn(raw: str) -> str | None:
     cleaned = _clean_isbn(raw)
-    if len(cleaned) == 13 and isbn13_checksum(cleaned):
+    # ISBN-13 values are reserved to GS1 Bookland prefixes 978/979.
+    if len(cleaned) == 13 and cleaned.startswith(("978", "979")) and isbn13_checksum(cleaned):
         return cleaned
     if len(cleaned) == 10 and isbn10_checksum(cleaned):
         return cleaned
@@ -92,6 +95,16 @@ def _candidate_pattern_matches(text: str) -> Iterable[str]:
             yield match.group(1)
 
 
+def _match_context(text: str, raw: str, *, radius: int = 80) -> str:
+    start = text.find(raw)
+    if start < 0:
+        return ""
+    end = start + len(raw)
+    lo = max(0, start - radius)
+    hi = min(len(text), end + radius)
+    return text[lo:hi]
+
+
 def find_isbn_candidates(
     text: str,
     source_kind: str,
@@ -102,10 +115,15 @@ def find_isbn_candidates(
     seen: set[str] = set()
     candidates: list[IsbnCandidate] = []
     for raw in _candidate_pattern_matches(text):
+        context = _match_context(text, raw)
+        if context and URL_CONTEXT_RE.search(context):
+            continue
         isbn = normalize_isbn(raw)
         if isbn is None or isbn in seen:
             continue
         seen.add(isbn)
+        has_isbn_cue = bool(context and ISBN_CUE_RE.search(context))
+        candidate_confidence = min(0.99, confidence + (0.08 if has_isbn_cue else 0.0))
         candidates.append(
             IsbnCandidate(
                 isbn=isbn,
@@ -114,7 +132,7 @@ def find_isbn_candidates(
                 source_kind=source_kind,
                 source_label=source_label,
                 page_number=page_number,
-                confidence=confidence,
+                confidence=candidate_confidence,
             )
         )
     return candidates

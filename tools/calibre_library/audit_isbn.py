@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import platform
+import re
 import sys
 from collections import Counter
 from dataclasses import asdict
@@ -53,6 +54,23 @@ PATH_CLASS_CONFIDENCE = {
     "unknown_pdf": 0.72,
     "artifact": 0.0,
 }
+
+CHAPTER_LIKE_FILE_CLASSES = {
+    "chapter_split_pdf",
+    "page_range_pdf",
+    "part_unit_section_pdf",
+}
+
+EXCLUDED_SCAN_FILE_CLASSES = {
+    "glossary_pdf",
+    "index_pdf",
+    "bibliography_pdf",
+}
+
+EXCLUDED_NAME_RE = re.compile(
+    r"(glossary|\bindex\b|references?|bibliograph|works\s+cited|end\s*matter|back\s*matter)",
+    re.IGNORECASE,
+)
 
 
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -115,6 +133,11 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Run the hybrid extractor when native text extraction is too sparse",
     )
     parser.add_argument(
+        "--allow-chapter-fallback",
+        action="store_true",
+        help="Allow fallback scanning of chapter-like split and page-range PDFs",
+    )
+    parser.add_argument(
         "--hybrid-url",
         default="http://127.0.0.1:5002",
         help="Hybrid backend URL used for fallback OCR",
@@ -146,6 +169,10 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Native extraction char count below which hybrid fallback is triggered",
     )
     return parser.parse_args(argv)
+
+
+def _is_excluded_by_naming(path_or_label: str) -> bool:
+    return bool(EXCLUDED_NAME_RE.search(path_or_label or ""))
 
 
 def _utc_now() -> str:
@@ -230,6 +257,10 @@ def _path_entries(group: dict[str, Any]) -> list[tuple[str, str, float]]:
     active_classes = list(group.get("active_file_classes") or [])
     for index, path_text in enumerate(active_paths):
         file_class = str(active_classes[index]) if index < len(active_classes) else "unknown_pdf"
+        if file_class in EXCLUDED_SCAN_FILE_CLASSES:
+            continue
+        if _is_excluded_by_naming(path_text):
+            continue
         add(path_text, f"active_source_paths[{index}]/{file_class}", PATH_CLASS_CONFIDENCE.get(file_class, 0.72))
     add(group.get("parent_dir"), "parent_dir", 0.72)
     add(group.get("parent_title_key"), "parent_title_key", 0.74)
@@ -319,6 +350,7 @@ def _scan_group(
     path_confidence_threshold: float,
     verify_path_candidates: bool,
     allow_hybrid_fallback: bool,
+    allow_chapter_fallback: bool,
     hybrid_url: str,
     hybrid_backend: str,
     hybrid_mode: str,
@@ -347,8 +379,48 @@ def _scan_group(
                 target_key = str(target_path)
                 if target_key in scanned_targets:
                     continue
-                scanned_targets.add(target_key)
                 target_class = str(classes[index]) if index < len(classes) else "unknown_pdf"
+                if target_class in EXCLUDED_SCAN_FILE_CLASSES:
+                    attempts.append(
+                        {
+                            "source_path": str(target_path),
+                            "file_class": target_class,
+                            "status": "skipped",
+                            "backend": None,
+                            "scan_phase": phase,
+                            "reason": "excluded_by_file_class",
+                            "candidates": 0,
+                        }
+                    )
+                    continue
+                if _is_excluded_by_naming(str(target_path.name)):
+                    attempts.append(
+                        {
+                            "source_path": str(target_path),
+                            "file_class": target_class,
+                            "status": "skipped",
+                            "backend": None,
+                            "scan_phase": phase,
+                            "reason": "excluded_by_naming",
+                            "candidates": 0,
+                        }
+                    )
+                    continue
+                if not allow_chapter_fallback and target_class in CHAPTER_LIKE_FILE_CLASSES:
+                    attempts.append(
+                        {
+                            "source_path": str(target_path),
+                            "file_class": target_class,
+                            "status": "skipped",
+                            "backend": None,
+                            "scan_phase": phase,
+                            "reason": "chapter_like_class_disabled",
+                            "candidates": 0,
+                        }
+                    )
+                    continue
+
+                scanned_targets.add(target_key)
                 if not target_path.exists():
                     attempts.append(
                         {
@@ -576,6 +648,7 @@ def main(argv: list[str] | None = None) -> int:
             path_confidence_threshold=args.path_confidence_threshold,
             verify_path_candidates=args.verify_path_candidates,
             allow_hybrid_fallback=args.allow_hybrid_fallback,
+            allow_chapter_fallback=args.allow_chapter_fallback,
             hybrid_url=args.hybrid_url,
             hybrid_backend=args.hybrid_backend,
             hybrid_mode=args.hybrid_mode,
@@ -615,6 +688,12 @@ def main(argv: list[str] | None = None) -> int:
     path_candidate_count = sum(1 for candidate in candidate_records if candidate["best_source_kind"] == "path")
     text_candidate_count = sum(1 for candidate in candidate_records if candidate["best_source_kind"] == "native_text")
     hybrid_candidate_count = sum(1 for candidate in candidate_records if candidate["best_source_kind"] == "hybrid_text")
+    skipped_targets = sum(
+        1
+        for record in group_audits
+        for attempt in record.get("scan_attempts", [])
+        if attempt.get("status") == "skipped"
+    )
 
     manifest = {
         "generated_utc": _utc_now(),
@@ -628,6 +707,7 @@ def main(argv: list[str] | None = None) -> int:
         "pages": args.pages,
         "max_scan_targets": args.max_scan_targets,
         "allow_hybrid_fallback": args.allow_hybrid_fallback,
+        "allow_chapter_fallback": args.allow_chapter_fallback,
         "hybrid_url": args.hybrid_url,
         "summary": {
             "groups_total": groups_total,
@@ -642,6 +722,7 @@ def main(argv: list[str] | None = None) -> int:
             "path_candidate_count": path_candidate_count,
             "text_candidate_count": text_candidate_count,
             "hybrid_candidate_count": hybrid_candidate_count,
+            "skipped_targets": skipped_targets,
             "errors": errors,
             "status_counts": dict(status_counts),
             "candidate_source_kind_counts": dict(source_kind_counts),
