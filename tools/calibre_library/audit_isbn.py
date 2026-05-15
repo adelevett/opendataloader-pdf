@@ -168,6 +168,18 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=120,
         help="Native extraction char count below which hybrid fallback is triggered",
     )
+    parser.add_argument(
+        "--native-timeout-seconds",
+        type=float,
+        default=30.0,
+        help="Timeout for each native Java extraction attempt in seconds. Use 0 to disable.",
+    )
+    parser.add_argument(
+        "--hybrid-timeout-seconds",
+        type=float,
+        default=120.0,
+        help="Timeout for each hybrid extraction attempt in seconds. Use 0 to disable.",
+    )
     return parser.parse_args(argv)
 
 
@@ -177,6 +189,10 @@ def _is_excluded_by_naming(path_or_label: str) -> bool:
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _attempt_status_for_exception(exc: Exception) -> str:
+    return "timeout" if isinstance(exc, TimeoutError) else "error"
 
 
 def _score_candidate(candidate: IsbnCandidate) -> tuple[float, int, int]:
@@ -292,6 +308,7 @@ def _extract_text_candidates(
     hybrid_mode: str,
     hybrid_ocr_strategy: str,
     use_struct_tree: bool,
+    timeout_seconds: float | None,
 ) -> tuple[list[IsbnCandidate], dict[str, Any]]:
     extraction = extract_pdf_text(
         source_path,
@@ -303,6 +320,7 @@ def _extract_text_candidates(
         hybrid_hancom_ai_ocr_strategy=hybrid_ocr_strategy,
         quiet=True,
         use_struct_tree=use_struct_tree,
+        timeout_seconds=timeout_seconds,
     )
 
     candidates: list[IsbnCandidate] = []
@@ -357,6 +375,8 @@ def _scan_group(
     hybrid_ocr_strategy: str,
     use_struct_tree: bool,
     native_char_threshold: int,
+    native_timeout_seconds: float,
+    hybrid_timeout_seconds: float,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     attempts: list[dict[str, Any]] = []
     collected: list[IsbnCandidate] = []
@@ -444,59 +464,132 @@ def _scan_group(
                         hybrid_mode=hybrid_mode,
                         hybrid_ocr_strategy=hybrid_ocr_strategy,
                         use_struct_tree=use_struct_tree,
+                        timeout_seconds=native_timeout_seconds,
                     )
                     collected.extend(native_candidates)
-                    fallback_used = False
-                    backend_used = "native"
-                    attempt_candidate_count = len(native_candidates)
-
-                    hybrid_candidates: list[IsbnCandidate] = []
-                    if (
-                        allow_hybrid_fallback
-                        and extraction_summary["char_count"] < native_char_threshold
-                        and not native_candidates
-                    ):
-                        hybrid_candidates, hybrid_summary = _extract_text_candidates(
-                            target_path,
-                            pages=pages,
-                            backend="hybrid",
-                            hybrid_url=hybrid_url,
-                            hybrid_backend=hybrid_backend,
-                            hybrid_mode=hybrid_mode,
-                            hybrid_ocr_strategy=hybrid_ocr_strategy,
-                            use_struct_tree=use_struct_tree,
-                        )
-                        collected.extend(hybrid_candidates)
-                        extraction_summary = hybrid_summary
-                        fallback_used = True
-                        backend_used = "hybrid"
-                        attempt_candidate_count = len(hybrid_candidates)
                     attempts.append(
                         {
                             "source_path": str(target_path),
                             "file_class": target_class,
                             "status": "ok",
-                            "backend": backend_used,
-                            "fallback_used": fallback_used,
+                            "backend": "native",
                             "scan_phase": phase,
                             "char_count": extraction_summary["char_count"],
                             "word_count": extraction_summary["word_count"],
                             "page_count": extraction_summary["page_count"],
-                            "candidate_count": attempt_candidate_count,
+                            "candidate_count": len(native_candidates),
+                            "timeout_seconds": native_timeout_seconds,
                         }
                     )
+
+                    should_try_hybrid = (
+                        allow_hybrid_fallback
+                        and extraction_summary["char_count"] < native_char_threshold
+                        and not native_candidates
+                    )
+                    if should_try_hybrid:
+                        try:
+                            hybrid_candidates, hybrid_summary = _extract_text_candidates(
+                                target_path,
+                                pages=pages,
+                                backend="hybrid",
+                                hybrid_url=hybrid_url,
+                                hybrid_backend=hybrid_backend,
+                                hybrid_mode=hybrid_mode,
+                                hybrid_ocr_strategy=hybrid_ocr_strategy,
+                                use_struct_tree=use_struct_tree,
+                                timeout_seconds=hybrid_timeout_seconds,
+                            )
+                            collected.extend(hybrid_candidates)
+                            attempts.append(
+                                {
+                                    "source_path": str(target_path),
+                                    "file_class": target_class,
+                                    "status": "ok",
+                                    "backend": "hybrid",
+                                    "fallback_used": True,
+                                    "fallback_trigger": "native_low_text",
+                                    "scan_phase": phase,
+                                    "char_count": hybrid_summary["char_count"],
+                                    "word_count": hybrid_summary["word_count"],
+                                    "page_count": hybrid_summary["page_count"],
+                                    "candidate_count": len(hybrid_candidates),
+                                    "timeout_seconds": hybrid_timeout_seconds,
+                                }
+                            )
+                        except Exception as hybrid_exc:
+                            attempts.append(
+                                {
+                                    "source_path": str(target_path),
+                                    "file_class": target_class,
+                                    "status": _attempt_status_for_exception(hybrid_exc),
+                                    "backend": "hybrid",
+                                    "fallback_used": True,
+                                    "fallback_trigger": "native_low_text",
+                                    "scan_phase": phase,
+                                    "error": str(hybrid_exc),
+                                    "candidate_count": 0,
+                                    "timeout_seconds": hybrid_timeout_seconds,
+                                }
+                            )
                 except Exception as exc:
                     attempts.append(
                         {
                             "source_path": str(target_path),
                             "file_class": target_class,
-                            "status": "error",
+                            "status": _attempt_status_for_exception(exc),
                             "backend": "native",
                             "scan_phase": phase,
                             "error": str(exc),
-                            "candidates": 0,
+                            "candidate_count": 0,
+                            "timeout_seconds": native_timeout_seconds,
                         }
                     )
+                    if allow_hybrid_fallback:
+                        try:
+                            hybrid_candidates, hybrid_summary = _extract_text_candidates(
+                                target_path,
+                                pages=pages,
+                                backend="hybrid",
+                                hybrid_url=hybrid_url,
+                                hybrid_backend=hybrid_backend,
+                                hybrid_mode=hybrid_mode,
+                                hybrid_ocr_strategy=hybrid_ocr_strategy,
+                                use_struct_tree=use_struct_tree,
+                                timeout_seconds=hybrid_timeout_seconds,
+                            )
+                            collected.extend(hybrid_candidates)
+                            attempts.append(
+                                {
+                                    "source_path": str(target_path),
+                                    "file_class": target_class,
+                                    "status": "ok",
+                                    "backend": "hybrid",
+                                    "fallback_used": True,
+                                    "fallback_trigger": "native_error",
+                                    "scan_phase": phase,
+                                    "char_count": hybrid_summary["char_count"],
+                                    "word_count": hybrid_summary["word_count"],
+                                    "page_count": hybrid_summary["page_count"],
+                                    "candidate_count": len(hybrid_candidates),
+                                    "timeout_seconds": hybrid_timeout_seconds,
+                                }
+                            )
+                        except Exception as hybrid_exc:
+                            attempts.append(
+                                {
+                                    "source_path": str(target_path),
+                                    "file_class": target_class,
+                                    "status": _attempt_status_for_exception(hybrid_exc),
+                                    "backend": "hybrid",
+                                    "fallback_used": True,
+                                    "fallback_trigger": "native_error",
+                                    "scan_phase": phase,
+                                    "error": str(hybrid_exc),
+                                    "candidate_count": 0,
+                                    "timeout_seconds": hybrid_timeout_seconds,
+                                }
+                            )
 
         scan_targets = list(group.get("scan_targets") or [])[:max_scan_targets]
         scan_classes = list(group.get("scan_target_classes") or [])
@@ -655,6 +748,8 @@ def main(argv: list[str] | None = None) -> int:
             hybrid_ocr_strategy=args.hybrid_ocr_strategy,
             use_struct_tree=args.use_struct_tree,
             native_char_threshold=args.native_char_threshold,
+            native_timeout_seconds=args.native_timeout_seconds,
+            hybrid_timeout_seconds=args.hybrid_timeout_seconds,
         )
         group_audits.append(group_record)
         candidate_records.extend(
@@ -709,6 +804,8 @@ def main(argv: list[str] | None = None) -> int:
         "allow_hybrid_fallback": args.allow_hybrid_fallback,
         "allow_chapter_fallback": args.allow_chapter_fallback,
         "hybrid_url": args.hybrid_url,
+        "native_timeout_seconds": args.native_timeout_seconds,
+        "hybrid_timeout_seconds": args.hybrid_timeout_seconds,
         "summary": {
             "groups_total": groups_total,
             "groups_scanned": groups_scanned,
